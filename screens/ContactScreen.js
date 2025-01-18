@@ -17,7 +17,7 @@ export default function ContactScreen({ route }) {
   }
 
   return (
-    <Drawer.Navigator screenOptions={{ headerShown: false }} drawerContent={(props) => <CustomDrawerContent {...props} />}>
+    <Drawer.Navigator initialRouteName="InContact" screenOptions={{ headerShown: false }} drawerContent={(props) => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="InContact">
         {(props) => (
           <View style={styles.container}>
